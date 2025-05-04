@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>maniacalwhistle</title>
+    <meta name="author" content="Michael Sampson">
+    <meta property="og:title" content="maniacalwhistle">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img class="avatar" src="media/michael_sampson.avif" />
+        <div class="title">maniacalwhistle</div>
+        <nav>
+          <a href="https://maniacalwhistle.github.io" target="_blank">
+            <img src="assets/icons/home.svg" alt="" />
+          </a>
+          <a href="https://instagram.com/maniacalwhistle" target="_blank">
+            <img src="assets/icons/instagram.svg" alt="" />
+          </a>
+          <a href="https://bsky.app/profile/maniacalwhistle.bsky.social" target="_blank">
+            <img src="assets/icons/twitter.svg" alt="" />
+          </a>
+        </nav>
+      </header>
+      <div id="gallery" class="gallery">
+          <div class="section" id="misc">
+            <div class="section-header-wrapper">
+              <div class="section-title">
+                portland, me
+              </div>
+              <div class="section-description">
+                celebrating jason
+              </div>
+            </div>
+            <div class="section-images section-images-misc">
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/misc/original/DSCF1950.JPG"
+                data-pswp-src="photos/misc/original/DSCF1950.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/misc/thumbnail/DSCF1950.JPG" />
+              </a>
+              </div>
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/misc/original/DSCF1948.JPG"
+                data-pswp-src="photos/misc/original/DSCF1948.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/misc/thumbnail/DSCF1948.JPG" />
+              </a>
+              </div>
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/misc/original/DSCF1931.jpg"
+                data-pswp-src="photos/misc/original/DSCF1931.jpg"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/misc/thumbnail/DSCF1931.jpg" />
+              </a>
+              </div>
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/misc/original/DSCF1906.JPG"
+                data-pswp-src="photos/misc/original/DSCF1906.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/misc/thumbnail/DSCF1906.JPG" />
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="around-town">
+            <div class="section-header-wrapper">
+              <div class="section-title">
+                around town
+              </div>
+              <div class="section-description">
+                
+              </div>
+            </div>
+            <div class="section-images section-images-around-town">
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/around-town/original/DSCF1857.JPG"
+                data-pswp-src="photos/around-town/original/DSCF1857.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/around-town/thumbnail/DSCF1857.JPG" />
+              </a>
+              </div>
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/around-town/original/DSCF1852.JPG"
+                data-pswp-src="photos/around-town/original/DSCF1852.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/around-town/thumbnail/DSCF1852.JPG" />
+              </a>
+              </div>
+              <div style="width: 640px; height: 427px">
+              <a class="section-image"
+                href="photos/around-town/original/DSCF1846.JPG"
+                data-pswp-src="photos/around-town/original/DSCF1846.JPG"
+                data-pswp-width="2048" 
+                data-pswp-height="1365" 
+                target="_blank">
+                <img class="lozad" data-src="photos/around-town/thumbnail/DSCF1846.JPG" />
+              </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer>
+        <p>Copyright © Michael Sampson. All Rights Reserved.</p>
+        <p class="foto_footer">Generated by <a href="https://github.com/waynezhang/foto" target="_blank">foto</a>.
+      </footer>
+    </div>
+    <script type="module">
+      const observer = lozad();
+      observer.observe();
+
+      import { JustifiedGrid } from 'https://cdn.skypack.dev/@egjs/grid';
+      const options = {
+        gap: 8,
+        columnRange: [ 1 ,  4 ],
+        sizeRange: [ 200 , Infinity],
+      };
+      (new JustifiedGrid(".section-images-misc", options)).renderItems();
+      (new JustifiedGrid(".section-images-around-town", options)).renderItems();
+
+      import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js';
+      import PhotoSwipe from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js';
+
+      const lightboxOptions = {
+        pswpModule: PhotoSwipe,
+        gallery: '.section-images',
+        children: 'a'
+      };
+      
+        lightboxOptions.arrowPrev =  true ;
+        lightboxOptions.arrowNext =  true ;
+        lightboxOptions.zoom =  true ;
+        lightboxOptions.close =  true ;
+        lightboxOptions.counter =  true ;
+      
+      const lightbox = new PhotoSwipeLightbox(lightboxOptions);
+      lightbox.init();
+    </script>
+  </body>
+</html>
